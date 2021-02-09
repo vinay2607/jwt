@@ -15,6 +15,11 @@ var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
 var bcrypt = require('bcryptjs');
 var config = require('../config'); // get config file
 
+router.get("/", (req, res) =>
+{
+  res.send("vinay gauatam");
+})
+
 router.post('/login', function (req, res)
 {
 
